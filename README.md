@@ -1,9 +1,9 @@
-# UPSERT Bigquery - GCP
+# UPSERT
 UPSERT is a combination of the words "UPDATE" and "INSERT". It refers to an operation in SQL that either updates an existing record in a table or inserts a new record into the table, depending on whether the record already exists.
 
 In other words, UPSERT performs a check to see if a record with the specified unique key already exists in the table. If does, the existing record is updated with the new values, if it doesn't, a new record is inserted into the table with the specified values.
 
-## Bigquery Example
+## Bigquery - GCP Example
         MERGE `project_id.dataset_id.table` as t
         USING (
             SELECT
